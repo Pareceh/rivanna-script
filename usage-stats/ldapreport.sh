@@ -14,7 +14,7 @@ LDAPFIELDS="uid sn givenName uvaDisplayDepartment description"
 
 while read USERNAME
 do
-	RECORD=$(ldapsearch -x -LLL -h ldap.virginia.edu -b "o=University of Virginia,c=US" uid=$USERNAME $LDAPFIELDS)
+	RECORD=$(ldapsearch -x -LLL -H ldap://ldap.virginia.edu -b "o=University of Virginia,c=US" uid=$USERNAME $LDAPFIELDS)
 	LUSER=$USERNAME
 	LNAME="(unknown)"
 	FNAME="(unknown)"
