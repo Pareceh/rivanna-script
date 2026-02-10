@@ -45,7 +45,7 @@ Example:
 After installation, you need to activate the Conda environment to use the scripts. This can be done with the following commands:
 
 ```bash
-ml anaconda
+module load miniforge
 source activate /path/to/repo/rivanna-script/usage-stats/rivanna-util-env
 ```
 
@@ -123,3 +123,4 @@ The documentation for scrontab can be found here: https://docs.nersc.gov/jobs/wo
 ---
 
 Please ensure you have the necessary permissions to run these scripts and access the specified directories and data.
+
